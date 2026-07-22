@@ -1,7 +1,5 @@
 # OpsBrain AI
-
 > **A grounded operational memory for industrial teams.**
-
 OpsBrain AI is a working enterprise RAG prototype for maintenance, safety, and compliance teams. It converts engineering records into connected evidence, then answers operational questions with source citations, confidence, and a visible retrieval trail.
 
 ## The challenge
@@ -128,9 +126,7 @@ docker-compose.yml   Optional production-topology services
 ```
 
 ## Responsible use
-
 OpsBrain is decision support, not an autonomous safety controller. Verify cited source material before safety-critical action, and apply the deployment's approved access control, malware scanning, retention, audit, encryption, and rate-limit policies.
 
 ## License
-
 Provided for the ET GenAI Hackathon demonstration. Add the competition or organization license before public production distribution.
