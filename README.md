@@ -75,3 +75,5 @@ Health endpoints:
 See [HACKATHON_DELIVERABLES.md](HACKATHON_DELIVERABLES.md) for the judging narrative, live demo flow, architecture summary, and fallback plan.
 
 For the exact runtime flow and locations of every Python/RAG module, see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+Submission assets are listed in [docs/REQUIREMENTS_MATRIX.md](docs/REQUIREMENTS_MATRIX.md), with the diagram in [docs/ARCHITECTURE_DIAGRAM.md](docs/ARCHITECTURE_DIAGRAM.md), presentation source in [docs/PRESENTATION_DECK.md](docs/PRESENTATION_DECK.md), and recording plan in [docs/DEMO_VIDEO_STORYBOARD.md](docs/DEMO_VIDEO_STORYBOARD.md).
