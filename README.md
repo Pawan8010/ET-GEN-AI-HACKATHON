@@ -1,143 +1,134 @@
 # OpsBrain AI
 
-> **Industrial knowledge intelligence for safer, faster operational decisions.**
+> **A grounded operational memory for industrial teams.**
 
-OpsBrain AI is an enterprise RAG platform for industrial teams. It turns heterogeneous engineering records into a searchable operational memory and gives maintenance, compliance, and safety teams cited answers they can verify.
+OpsBrain AI is a working enterprise RAG prototype for maintenance, safety, and compliance teams. It converts engineering records into connected evidence, then answers operational questions with source citations, confidence, and a visible retrieval trail.
 
-## Hackathon submission
+## The challenge
 
-### The problem
+Industrial knowledge is fragmented across SOPs, manuals, incident reports, inspection notes, spreadsheets, and shift handovers. During a maintenance or safety decision, teams need an answer quickly—but also need to know exactly where that answer came from.
 
-Critical knowledge is spread across manuals, SOPs, incident reports, inspection notes, spreadsheets, and shift handovers. Engineers lose time searching, evidence is difficult to trace, and similar failures recur because lessons are not connected to assets or procedures.
+## What we built
 
-### Our solution
+OpsBrain creates a searchable digital memory for plant operations:
 
-OpsBrain automatically ingests operational documents, extracts structured evidence, builds adaptive chunks and entity relationships, and combines keyword, semantic, and graph retrieval. The Copilot responds only from retrieved evidence, displays citations and confidence, and exposes the retrieval trace for auditability.
+- Ingests PDF, DOCX, PPTX, XLSX, CSV, HTML, TXT, Markdown, and ZIP records.
+- Extracts text and metadata, creates adaptive section-aware chunks, and indexes them automatically.
+- Combines keyword, semantic, and entity/graph retrieval for evidence discovery.
+- Uses Gemini when configured, with a deterministic extractive fallback for repeatable local demos.
+- Returns grounded answers with document, page/chunk, similarity, confidence, and related-source evidence.
+- Connects Copilot, Documents, Assets, Graph, Compliance, RCA, and Insights through one API.
 
-### Why it matters
+## Why it is valuable
 
-- Faster answers during maintenance and incident response
-- Evidence-backed decisions instead of unauditable chatbot text
-- A digital memory for every asset, procedure, and incident
-- A foundation for compliance gap analysis and predictive workflows
+1. **Faster decisions:** operators ask a natural-language question instead of searching multiple folders.
+2. **Trustworthy answers:** every response exposes its evidence and retrieval diagnostics.
+3. **Connected context:** incidents, assets, procedures, departments, and regulations are linked.
+4. **Deployable foundation:** the same API can connect to enterprise storage, QMS, and plant systems.
 
-## Capability map
+## Judge-ready demonstration
 
-| Capability | Demonstrated implementation |
-|---|---|
-| Document intelligence | PDF, DOCX, PPTX, XLSX, CSV, HTML, TXT, Markdown, ZIP extraction; metadata and adaptive chunking |
-| Enterprise RAG | Hybrid keyword/vector retrieval, query expansion, reranking, grounded Gemini generation, citations, confidence |
-| Knowledge graph | Entity and relationship index with asset, incident, procedure, department, and regulation links |
-| Operational Copilot | Streaming-ready chat API, conversation context, source ranking, related documents, retrieval diagnostics |
-| Asset intelligence | Asset history, manuals, maintenance evidence, risks, recommendations, and linked incidents |
-| Compliance and RCA | Evidence-led compliance gap and root-cause workflows in the product UI |
-| Observability | Health, readiness, RAG status, ingestion progress, latency and confidence telemetry |
-| Responsive product | Premium desktop and mobile layouts with authenticated React routes |
+1. Sign in with Firebase Email/Password.
+2. Open **Documents** and upload a record—or use the marked demonstration corpus.
+3. Wait for automatic extraction and indexing.
+4. In **Copilot**, ask: *“What are the vibration alert thresholds for PMP-101?”*
+5. Verify the cited source, chunk, confidence, and retrieval counts.
+6. Open **Assets**, **Graph**, **Compliance**, **RCA**, and **Insights** to follow the same evidence across workflows.
+
+The product has no fake sign-in or demo bypass. Every document follows the same ingestion and retrieval path.
 
 ## Architecture
 
 ```text
-React + Firebase Email/Password Auth
+React + Firebase Email/Password
               |
               v
-FastAPI API gateway (REST + realtime events)
+FastAPI API gateway and realtime events
               |
-  ingestion -> extraction/OCR -> metadata -> adaptive chunks
+ extraction -> metadata -> adaptive chunks -> embeddings
               |
-  embeddings -> hybrid retrieval (keyword + vector + graph)
+ keyword + semantic + graph retrieval -> reranking
               |
-  reranking -> prompt orchestration -> Gemini (optional)
-              |
-  citations + confidence + related entities -> Copilot UI
+ Gemini prompt orchestration -> citations/confidence -> Copilot
 ```
 
-The local runtime includes deterministic retrieval and extractive fallback behavior, so the cited workflow remains testable without an external model key. Docker Compose provides PostgreSQL, Redis, Qdrant, Neo4j, MinIO, and ClamAV foundations for production integration.
+The repository includes a local production topology for PostgreSQL, Redis, Qdrant, Neo4j, MinIO, and ClamAV. The core prototype runs with its local indexed corpus and does not require every optional service.
 
-Detailed module ownership is documented in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). The Mermaid architecture diagram is in [docs/ARCHITECTURE_DIAGRAM.md](docs/ARCHITECTURE_DIAGRAM.md).
+See [the module architecture](docs/ARCHITECTURE.md) and [the Mermaid system diagram](docs/ARCHITECTURE_DIAGRAM.md).
 
-## Run locally
+## Key capabilities
 
-**Prerequisites:** Node.js 20+, Python 3.11+, and (optional) Docker Desktop.
+| Area | What is working in this submission |
+| --- | --- |
+| Document intelligence | Multi-format extraction, ZIP handling, metadata, adaptive chunks, ingestion status |
+| Enterprise RAG | Hybrid keyword/vector/graph retrieval, query expansion, reranking, grounded generation, citations |
+| Knowledge graph | Entity and relationship index for assets, incidents, procedures, departments, and regulations |
+| Operations Copilot | Conversational context, source ranking, confidence, related documents, retrieval diagnostics |
+| Asset intelligence | Asset history, maintenance evidence, risks, recommendations, and linked incidents |
+| Compliance and RCA | Evidence-led compliance gaps and root-cause workflows |
+| Product experience | Responsive React UI for desktop and mobile, light/dark theme, route-connected dashboards |
+| Operations | Health/readiness endpoints, ingestion telemetry, CI checks, Docker Compose topology |
+
+## Quick start
+
+**Prerequisites:** Node.js 20+, Python 3.11+, and optionally Docker Desktop.
 
 ```powershell
 git clone https://github.com/Pawan8010/ET-GEN-AI-HACKATHON.git
 cd ET-GEN-AI-HACKATHON
 npm install
-python -m pip install -e ".\backend[dev]"
+python -m pip install -e ".\\backend[dev]"
 Copy-Item .env.example .env
-npm run build
+npm run verify
 npm run backend:dev
 ```
 
-Open `http://127.0.0.1:8000/#/`. FastAPI docs: `http://127.0.0.1:8000/docs`.
+Open `http://127.0.0.1:8000/#/`. API documentation is at `http://127.0.0.1:8000/docs`.
 
-### Environment configuration
+### Environment and security
 
-Set values in a local `.env` file only; never commit it.
+Put secrets in a local `.env` only; `.env` is ignored and is not in this repository. Configure `GEMINI_API_KEY` for Gemini answers, Firebase client settings for sign-in, and optional service URLs for PostgreSQL/Redis/Qdrant/Neo4j. In Firebase Console, enable Email/Password and authorize the local or deployed hostname.
 
-- `GEMINI_API_KEY` — optional Gemini generation provider
-- `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_APP_ID` — Firebase client configuration
-- `FIREBASE_PROJECT_ID` and service-account settings — backend token verification when enabled
-- `DATABASE_URL`, `REDIS_URL`, `QDRANT_URL`, `NEO4J_URI` — optional external services
+Never commit provider keys, Firebase service accounts, production documents, or personal data. Rotate any key that has been shared outside a secret manager.
 
-In Firebase Console, enable **Email/Password** authentication and authorize `localhost`, `127.0.0.1`, and the deployed hostname. Google SSO and demo sign-in are intentionally not part of the product flow.
-
-## Use the product
-
-1. Sign in with an approved Firebase Email/Password account.
-2. Open **Documents** and upload an engineering record or use the marked demonstration corpus.
-3. Wait for ingestion/indexing progress to complete.
-4. Ask **Copilot** a question such as: “What are the vibration alert thresholds for PMP-101?”
-5. Inspect citations, page/chunk metadata, confidence, and retrieval diagnostics.
-6. Explore **Assets**, **Graph**, **Compliance**, **RCA**, and **Insights** for connected evidence.
-
-Every uploaded document is indexed automatically; there is no manual training button.
-
-## Verification and quality
+## Verification
 
 ```powershell
 npm run verify
 ```
 
-This runs the backend test suite, TypeScript validation, and the production frontend build. CI repeats the same checks for pushes and pull requests. Useful runtime checks:
+This runs the backend test suite, TypeScript validation, and the production frontend build. Runtime checks:
 
 - `/api/health` — process health
 - `/api/ready` — dependency readiness
 - `/api/rag-status` — indexed documents, chunks, entities, provider, and health
 
-## Container deployment
+The submission was verified with 30 backend tests, a successful TypeScript/build pipeline, Docker Compose validation, and a live Gemini-grounded query against the demonstration corpus.
 
-Configure deployment secrets outside Git, then:
+## Submission materials
 
-```powershell
-docker compose up --build
-```
+- [Hackathon deliverables and demo flow](HACKATHON_DELIVERABLES.md)
+- [Requirements matrix](docs/REQUIREMENTS_MATRIX.md)
+- [Architecture diagram](docs/ARCHITECTURE_DIAGRAM.md)
+- [Presentation deck source](docs/PRESENTATION_DECK.md)
+- [Demo video storyboard](docs/DEMO_VIDEO_STORYBOARD.md)
 
-Use a managed secret store, restricted Firebase domains, HTTPS, rate limiting, and rotated provider keys in a hosted environment.
+The requirements matrix clearly separates implemented prototype features from plant-specific extension points. Scanned-image OCR/P&ID computer vision and external QMS connectors require customer drawings, models, or credentials and are not presented as falsely completed.
 
-## Judging and demo assets
-
-- [Hackathon deliverables](HACKATHON_DELIVERABLES.md) — judging narrative and live demo flow
-- [Requirements matrix](docs/REQUIREMENTS_MATRIX.md) — implemented capabilities and extension points
-- [Presentation deck source](docs/PRESENTATION_DECK.md) — slide-by-slide pitch content
-- [Demo video storyboard](docs/DEMO_VIDEO_STORYBOARD.md) — 3:30 recording plan
-
-The requirements matrix is intentionally honest: scanned-image OCR/P&ID computer vision and external QMS connectors are documented extension points requiring plant-specific models or credentials. The core working prototype, ingestion pipeline, hybrid RAG, graph retrieval, citations, responsive UI, and demo corpus are included in this repository.
-
-## Repository structure
+## Repository map
 
 ```text
 src/                 React pages, components, API client, auth, design system
 backend/app/         FastAPI routes, ingestion, retrieval, Gemini orchestration
 backend/tests/       Unit, integration, retrieval, and RAG tests
-storage/documents/   Small marked demonstration corpus
-docs/                Architecture, requirements, deck, and demo documentation
-docker-compose.yml   Local production-topology services
+storage/documents/   Marked synthetic demonstration corpus
+docs/                Architecture, requirements, pitch, and recording assets
+docker-compose.yml   Optional production-topology services
 ```
 
-## Security and responsible use
+## Responsible use
 
-Do not commit API keys, Firebase service accounts, production documents, or personal data. Treat Copilot output as decision support: verify cited source material before safety-critical action. Uploaded files and credentials should be protected with the deployment's approved malware scanning, retention, access-control, and audit policies.
+OpsBrain is decision support, not an autonomous safety controller. Verify cited source material before safety-critical action, and apply the deployment's approved access control, malware scanning, retention, audit, encryption, and rate-limit policies.
 
 ## License
 
