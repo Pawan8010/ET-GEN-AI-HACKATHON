@@ -112,6 +112,7 @@ The submission was verified with 30 backend tests, a successful TypeScript/build
 - [Architecture diagram](docs/ARCHITECTURE_DIAGRAM.md)
 - [Presentation deck source](docs/PRESENTATION_DECK.md)
 - [Demo video storyboard](docs/DEMO_VIDEO_STORYBOARD.md)
+- [Copy-ready PS8 submission package](docs/SUBMISSION_PACKAGE.md)
 
 The requirements matrix clearly separates implemented prototype features from plant-specific extension points. Scanned-image OCR/P&ID computer vision and external QMS connectors require customer drawings, models, or credentials and are not presented as falsely completed.
 
