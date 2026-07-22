@@ -1,0 +1,4 @@
+PMP-101 High Vibration Inspection Note
+Document status: DEMONSTRATION DATA for prototype validation
+
+On 2026-07-20, vibration at pump PMP-101 exceeded the operating threshold. Inspect bearing fatigue and mechanical alignment before restart. Follow SOP-PMP-101-MAINT and OSHA-1910.119 requirements. Record isolation and lockout evidence before dismantling the casing.

@@ -1,0 +1,9 @@
+CMP-202 Compressor Failure and Maintenance History
+Document status: DEMONSTRATION DATA for prototype validation
+
+Asset: CMP-202 centrifugal process-air compressor, Utilities Area B.
+On 11 May 2026, drive-end bearing temperature rose from 72 C to 91 C over two shifts while discharge pressure remained stable. Inspection found restricted lubrication flow caused by varnish deposits in the bearing oil line. The line was flushed, the bearing was inspected, and oil cleanliness was restored.
+
+Required preventive actions: trend drive-end bearing temperature every shift; inspect lubricant differential pressure weekly; sample oil monthly; trigger engineering review at 85 C; and do not restart after an alarm until lubrication flow is independently verified.
+
+The event is recorded as FR-2026-05-11-CMP202. Follow ISO 14224 reliability-data requirements and SOP-CMP-202-LUBE revision 3.

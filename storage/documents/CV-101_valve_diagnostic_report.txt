@@ -1,0 +1,9 @@
+CV-101 Emergency Bypass Valve Diagnostic Report
+Document status: DEMONSTRATION DATA for hackathon validation
+Inspection reference: INSP-2026-06-CV101.
+
+Control valve CV-101 provides the emergency depressurization path from reactor R-102 to flare stack FS-501. A partial-stroke test on 28 June 2026 measured 3.8 seconds opening time against the acceptance limit of 2.5 seconds. Position feedback showed intermittent stiction between 35 and 48 percent travel.
+
+Maintenance found dried packing lubricant and excessive gland loading. The packing was replaced, the actuator linkage aligned, and the positioner calibrated. The repeated partial-stroke test completed in 1.9 seconds with stable feedback.
+
+CV-101 remains safety critical. Perform a partial-stroke test every 30 days, verify instrument-air pressure above 5.5 bar, and create an immediate corrective work order if opening time exceeds 2.5 seconds. Do not bypass or suppress the valve diagnostic alarm without Process Safety authorization.

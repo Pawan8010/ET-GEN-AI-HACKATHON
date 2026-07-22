@@ -1,0 +1,9 @@
+R-102 High-Temperature Event Timeline
+Document status: DEMONSTRATION DATA for hackathon validation
+Event reference: EVT-2026-07-09-R102.
+
+14:02 — reactor R-102 catalyst-bed temperature TIC-102A increased from 352 C to 366 C. 14:04 — independent transmitter TIC-102B confirmed 368 C and the high-temperature alarm activated. 14:05 — the board operator reduced feed through PMP-410. 14:07 — temperature reached 381 C, satisfying the emergency-depressurization criterion.
+
+14:08 — feed valves XV-411A and XV-411B were confirmed closed. 14:09 — emergency bypass valve CV-101 opened and flare stack FS-501 flow was confirmed. 14:16 — pressure fell below 20 bar. 14:31 — temperature stabilized at 118 C and pressure reached 4.6 bar. All field personnel were accounted for; no release or injury occurred.
+
+Preliminary evidence indicates cooling-flow loss preceded the temperature rise. The event remains under investigation and this timeline does not assign final root cause. Preserve control-system alarms, valve travel records, operator logs, and cooling-water data for RCA.

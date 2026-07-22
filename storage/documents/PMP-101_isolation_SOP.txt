@@ -1,0 +1,6 @@
+PMP-101 Maintenance Isolation Standard Operating Procedure
+Document status: DEMONSTRATION DATA for prototype validation
+
+Before opening pump PMP-101, stop the driver, isolate electrical energy, close upstream valve VLV-204, drain residual pressure, apply lockout/tagout, and physically prove zero energy. The operator and an independent verifier must sign the isolation checklist. A control-room indication alone is not acceptable proof of valve closure.
+
+If the VLV-204 position indicator is unreliable, suspend casing work until physical valve position has been verified and the defect is recorded for repair. OISD-STD-105 Section 5.2 requires documented daily lockout/tagout verification before maintenance begins. Follow SOP-PMP-101-MAINT revision 6.

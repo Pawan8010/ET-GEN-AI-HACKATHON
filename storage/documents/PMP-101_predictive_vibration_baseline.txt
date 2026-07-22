@@ -1,0 +1,8 @@
+PMP-101 Predictive Vibration Baseline
+Document status: DEMONSTRATION DATA for prototype validation
+
+Asset: PMP-101 centrifugal process pump, Process Area A. Baseline collected 18 July 2026 after bearing replacement and alignment verification. Overall velocity is 2.1 mm/s RMS, horizontal 1.6 mm/s, vertical 1.4 mm/s, and axial 0.9 mm/s at 2,980 RPM.
+
+Alert thresholds: advisory at 4.5 mm/s RMS, action at 7.1 mm/s RMS, and trip review at 11.2 mm/s RMS. A rising axial trend above 0.8 mm/s for three consecutive shifts requires alignment inspection. Correlate vibration with bearing temperature, lubrication status, and coupling condition before assigning a failure mode.
+
+Recommended cadence: collect a route reading every shift, review the trend weekly, and perform a documented alignment check after any casing removal. Evidence must be linked to PMP-101 and the active work order.

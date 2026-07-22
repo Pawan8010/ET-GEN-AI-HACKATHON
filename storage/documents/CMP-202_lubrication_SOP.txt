@@ -1,0 +1,6 @@
+CMP-202 Lubrication and Restart Procedure
+Document status: DEMONSTRATION DATA for prototype validation
+
+For compressor CMP-202 in Utilities Area B, verify the oil reservoir level, differential pressure across the filter, and free flow through the drive-end bearing oil line before restart. A temperature alarm above 85 C requires a controlled stop and an independent lubrication-flow verification.
+
+The technician must record oil sample ID, viscosity result, filter condition, bearing temperature, and verifier name in the maintenance record. Do not bypass the alarm or return CMP-202 to service while varnish deposits, restricted flow, or abnormal bearing noise remain unresolved. Link the record to FR-2026-05-11-CMP202 and ISO 14224 reliability fields.

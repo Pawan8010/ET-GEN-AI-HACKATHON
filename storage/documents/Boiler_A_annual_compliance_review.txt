@@ -1,0 +1,6 @@
+Boiler A Annual Compliance Review
+Document status: DEMONSTRATION DATA for prototype validation
+
+Annual review scope covers Boiler A, steam drum SD-110, burner BOI-501, relief devices, emissions checks, operator qualification, and emergency shutdown drills. Open evidence gaps are the current burner-trip checklist signature, the latest relief-valve calibration certificate, and the signed emergency-drill attendance sheet.
+
+The compliance owner must upload each missing record, map it to the applicable company SOP and statutory control, assign a due date, and obtain independent verification. A complete review requires document version, inspection date, equipment tag, responsible person, and approval record.

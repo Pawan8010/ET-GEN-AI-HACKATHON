@@ -1,0 +1,10 @@
+PMP-101 Near-Miss Incident Investigation
+Incident reference: INC-2025-11-08-003
+
+On 8 November 2025, a maintenance technician began dismantling the casing of pump PMP-101 before upstream isolation valve VLV-204 had been fully shut, locked, and verified. Residual process pressure caused a minor fluid release. No injury occurred, but the event was classified as a near miss.
+
+The investigation identified incomplete lockout/tagout verification as the direct cause. The work permit recorded pump isolation but did not contain the required independent confirmation that VLV-204 was fully closed. Shift handover also failed to communicate that the valve position indicator was unreliable.
+
+Corrective actions: physically verify VLV-204 closure, apply and document lockout/tagout before opening PMP-101, require an independent verifier to sign the isolation checklist, repair the valve position indicator, and brief both maintenance and operations teams during shift handover.
+
+Applicable control: OISD-STD-105 Section 5.2 requires documented daily lockout/tagout verification before maintenance begins.

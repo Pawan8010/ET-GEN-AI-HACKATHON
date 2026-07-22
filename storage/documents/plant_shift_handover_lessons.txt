@@ -1,0 +1,6 @@
+Operations Shift Handover Lessons Register
+Document status: DEMONSTRATION DATA for prototype validation
+
+Incident INC-2025-11-08-003 showed that the night-to-day handover did not communicate the unreliable VLV-204 position indicator. For all safety-critical equipment, the outgoing operator must identify active impairments, isolations, overrides, abnormal trends, and pending work permits. The incoming operator must read back each safety-critical item.
+
+PMP-101, VLV-204, CMP-202, and TNK-301 are currently classified as handover-critical assets. Supervisors must sample and audit one completed handover record per week.

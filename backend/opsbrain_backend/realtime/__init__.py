@@ -1,0 +1,1 @@
+"""Typed realtime domain events."""

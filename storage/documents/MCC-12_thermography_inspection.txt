@@ -1,0 +1,9 @@
+MCC-12 Electrical Thermography Inspection Report
+Document status: DEMONSTRATION DATA for hackathon validation
+Inspection reference: IR-2026-0712-MCC12.
+
+Infrared inspection on 12 July 2026 found a 38 C temperature rise at the phase-B outgoing termination for motor-control centre MCC-12 feeder FDR-12-07. Comparable phases were within 7 C of ambient. The feeder supplies cooling-water pump PMP-220.
+
+The condition is classified High priority because the temperature differential exceeds the site electrical-maintenance threshold of 30 C. Probable causes are a loose termination or contact-surface oxidation. Keep the feeder under enhanced load and temperature monitoring until repair.
+
+Required action: isolate MCC-12 feeder FDR-12-07 under the electrical lockout procedure, torque and inspect the termination, replace heat-damaged hardware, perform insulation-resistance testing, and repeat thermography after 24 hours at normal load. Target completion date is 24 July 2026.

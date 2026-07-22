@@ -1,0 +1,6 @@
+TNK-301 Pressure Receiver Relief Valve Test Record
+Document status: DEMONSTRATION DATA for prototype validation
+
+Asset TNK-301 is the instrument-air receiver in Utilities Area B. PSV-301 was function-tested on 03 June 2026 at the calibrated set pressure of 10.0 bar. The test certificate is marked DEMONSTRATION DATA and is not evidence of statutory compliance until signed by the competent person.
+
+Before the next audit, confirm the certificate number, calibration traceability, shell-thickness readings, internal inspection date, and PESO SMPV approval. If PSV-301 fails a lift test, isolate TNK-301, notify the area supervisor, and open a corrective work order before returning the receiver to service.

@@ -1,0 +1,9 @@
+HX-410 Heat Exchanger Tube-Leak Investigation
+Document status: DEMONSTRATION DATA for hackathon validation
+Incident reference: INC-2026-03-17-HX410.
+
+On 17 March 2026, exchanger HX-410 showed rising hydrocarbon content in the cooling-water return and a 14 percent loss of process-side pressure. Operations isolated HX-410 and transferred duty to standby exchanger HX-411. No personnel exposure occurred.
+
+Eddy-current inspection identified through-wall thinning in tube row 7 caused by inlet-zone erosion-corrosion. The direct cause was localized high velocity after a damaged inlet distributor shifted flow toward the outer tube rows. Contributing factors were a missed distributor inspection during the 2024 turnaround and an overdue cooling-water chemistry review.
+
+Corrective actions CAPA-2026-HX410-01: replace the inlet distributor, plug the affected tubes, inspect HX-411, reduce the inspection interval to 18 months, and add iron-content trending to the monthly corrosion review. Do not return HX-410 to service until a pressure test at the approved test pressure is accepted by Mechanical Integrity.

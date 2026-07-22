@@ -1,0 +1,6 @@
+R-102 Reactor Shift Handover Action Log
+Document status: DEMONSTRATION DATA for prototype validation
+
+Reactor R-102 handover-critical items for Hydrocracking Area A: catalyst-bed temperature trend, shell pressure, bypass loop readiness, flare stack FS-501 availability, and valve positions CV-101 and DBV-102. The outgoing operator must read back every active impairment and the incoming operator must acknowledge the record.
+
+When temperature approaches 380 C or pressure approaches 135 bar, escalate to the shift supervisor and prepare the emergency depressurization sequence from SOP-R-102 revision 4. This action log must be linked to R-102, CV-101, FS-501, and any resulting incident or corrective work order.

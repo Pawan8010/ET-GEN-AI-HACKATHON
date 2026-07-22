@@ -1,0 +1,6 @@
+Industrial Asset Knowledge Register
+Document status: DEMONSTRATION DATA for prototype validation
+
+PMP-101 is a centrifugal process pump in Process Area A. VLV-204 is its upstream isolation valve. CMP-202 is a centrifugal process-air compressor in Utilities Area B. TNK-301 is an instrument-air pressure receiver protected by PSV-301.
+
+Knowledge relationships: PMP-101 is isolated by VLV-204. CMP-202 supplies instrument air to TNK-301. TNK-301 is protected by PSV-301. Maintenance and compliance evidence for each asset must be linked by its exact equipment tag.

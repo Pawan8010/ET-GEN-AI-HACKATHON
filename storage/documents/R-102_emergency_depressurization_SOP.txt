@@ -1,0 +1,9 @@
+R-102 Emergency Depressurization Standard Operating Procedure
+Document status: DEMONSTRATION DATA for hackathon validation
+Document ID: SOP-R102-EMR revision 4. Effective date: 10 June 2026.
+
+Asset R-102 is the hydrocracking reactor in Process Area C. Initiate emergency depressurization when catalyst-bed temperature reaches 380 C, reactor pressure reaches 135 bar, or a confirmed runaway indication is received from two independent transmitters.
+
+The board operator must stop feed pump PMP-410, close feed isolation valves XV-411A and XV-411B, open emergency bypass valve CV-101, and route reactor vapour to flare stack FS-501. Field personnel must withdraw to the designated muster point and must not approach R-102 until the shift supervisor confirms pressure below 5 bar and temperature below 120 C.
+
+Do not discharge to atmosphere. Record the initiating alarms, operator actions, valve feedback, pressure trend, and flare confirmation in the event log. The incident commander authorizes restart only after Process Safety and Mechanical Integrity approve the investigation findings.

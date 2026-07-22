@@ -1,0 +1,11 @@
+EHS Operational Compliance Control Matrix
+Document status: DEMONSTRATION DATA for hackathon validation
+Matrix revision: 2026-Q3.
+
+OISD-STD-105 Section 5.2 requires documented lockout/tagout verification before maintenance. Evidence owner: Maintenance Manager. Required evidence: isolation checklist with operator and independent-verifier signatures. Current status: partial because the PMP-101 near-miss permit lacked independent confirmation.
+
+OSHA 29 CFR 1910.119 mechanical-integrity controls require inspection and testing records for process equipment. Evidence owner: Mechanical Integrity Lead. HX-410 eddy-current inspection and pressure-test acceptance are required before return to service.
+
+Site Process Safety Standard PSS-14 requires monthly proof testing for emergency depressurization valves. Evidence owner: Instrumentation Lead. CV-101 passed the repeated partial-stroke test in 1.9 seconds on 28 June 2026; the next test is due 28 July 2026.
+
+PESO SMPV rules require a current competent-person certificate for pressure receiver TNK-301. Current status: evidence gap because the certificate is not present in the indexed corpus. The system must report this gap and must not infer compliance.

@@ -1,0 +1,6 @@
+HX-410 Heat Exchanger Leak Response SOP
+Document status: DEMONSTRATION DATA for prototype validation
+
+If hydrocarbon is detected in the cooling-water return from heat exchanger HX-410, stop the affected train according to the approved shutdown sequence, isolate process and utility sides, notify the control room, and collect a sample under the chemical exposure procedure. Do not open the channel head until pressure and temperature are confirmed zero.
+
+The incident owner must preserve the first sample, record time and location, inspect tube-sheet evidence, and link the event to HX-410 and the relevant work order. A restart requires leak-boundary verification, an independent permit review, and a signed operations handover.

@@ -1,0 +1,9 @@
+BOI-501 Boiler Burner Trip and Safe Restart Checklist
+Document status: DEMONSTRATION DATA for hackathon validation
+Checklist ID: SOP-BOI501-TRIP revision 2.
+
+Boiler BOI-501 tripped on 2 July 2026 after flame scanner FLS-501B reported loss of flame while fuel-gas pressure remained normal. Inspection found soot contamination on the scanner lens; no fuel valve failure was identified.
+
+Before restart, close fuel shutoff valves XV-501A and XV-501B, verify zero fuel pressure downstream, purge the furnace for five complete air changes, clean and function-test both flame scanners, and prove the burner-management interlocks. A purge timer bypass is prohibited. The shift supervisor and control-room operator must independently sign the restart checklist.
+
+Recurring scanner contamination requires inspection of burner register alignment and combustion-air balance. Work order WO-2026-BOI501-044 requires weekly scanner inspection until three consecutive clean checks are recorded.

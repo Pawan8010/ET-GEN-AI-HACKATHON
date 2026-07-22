@@ -1,0 +1,9 @@
+PMP-220 Cooling-Water Pump Cavitation Root Cause Analysis
+Document status: DEMONSTRATION DATA for hackathon validation
+RCA reference: RCA-2026-04-PMP220.
+
+Pump PMP-220 experienced high broadband vibration, gravel-like noise, and fluctuating discharge pressure during afternoon peak demand. Inspection found the suction strainer 62 percent blocked by cooling-tower debris. The reduced suction pressure caused cavitation; bearing damage was not the initiating cause.
+
+The first why was unstable flow due to cavitation. The second why was inadequate net positive suction head. The third why was excessive suction-strainer differential pressure. The fourth why was debris accumulation. The fifth why was failure to execute the weekly strainer inspection after the maintenance route was reassigned.
+
+Corrective actions: clean the strainer, restore the weekly inspection route, alarm differential pressure at 0.35 bar, verify suction pressure before starting the standby pump, and review cooling-tower screen integrity. Vibration returned below 3.2 mm/s after cleaning.
